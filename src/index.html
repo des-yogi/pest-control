@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Pest Control of Ukraine</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+  <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+      <button class="uk-offcanvas-close uk-close-large" type="button" uk-close aria-label="Закрыть меню"></button>
+
+      <h3>Title</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</p>
+
+    </div>
+  </div>
+
+  <div class="page__inner">
+
+    <div class="page__content" id="target-top">
+
+      <div class="page__top-bg  uk-background-secondary uk-light uk-background-center-center uk-background-cover uk-background-norepeat" style="background-image: url(../img/index-bg.jpg);">
+
+        @@include('blocks/page-header/page-header.html')
+
+        <section>
+
+          <div class="uk-container uk-margin-medium-bottom" style="background-color: rgba(35,42,48,0.25)">
+            <div class="uk-margin-top uk-margin-bottom uk-child-width-1-1 uk-child-width-1-2@s uk-flex-middle" data-uk-grid>
+              <div>
+                <h2 class="uk-h1 uk-margin-remove-bottom">Найближчі події</h2>
+              </div>
+              <div class="uk-text-right@s">
+                <a href="events.html" class="text-link">Всі публікації подій</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="uk-container">
+
+            <div uk-slider="finite: false">
+
+              <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+                <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid" data-uk-height-match="target: > li > .uk-card">
+                  <li>
+                    <a href="#" class="uk-card uk-card-small uk-card-default uk-flex uk-flex-column">
+                      <div class="embed-responsive embed-responsive--3-2 uk-card-media-top">
+                        <picture>
+                          <source data-srcset="img/news-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                          <source data-srcset="img/news-img-1.jpg" media="(min-width: 992px)">
+                          <!-- 375x250 -->
+                          <source data-srcset="img/news-img-1.webp" media="(min-width: 640px)" type="image/webp">
+                          <source data-srcset="img/news-img-1.jpg" media="(min-width: 640px)">
+                          <!-- 450x300 -->
+                          <source data-srcset="img/news-img-1.webp" type="image/webp">
+                          <img class="b-lazy" data-src="img/news-img-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Фото" width="600" height="400">
+                        </picture>
+                      </div>
+                      <div class="uk-card-body uk-flex uk-flex-column uk-flex-between">
+                        <h4 class="uk-card-title">Кейс Varus: коли і чому рітейлеру краще віддавати управління складами на аутсорс</h4>
+                        <div class="uk-card-footer uk-padding-remove">
+                          <span class="publishedon">22 Лют, 2019</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="uk-card uk-card-small uk-card-default uk-flex uk-flex-column">
+                      <div class="embed-responsive embed-responsive--3-2 uk-card-media-top">
+                        <picture>
+                          <source data-srcset="img/news-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                          <source data-srcset="img/news-img-1.jpg" media="(min-width: 992px)">
+                          <!-- 375x250 -->
+                          <source data-srcset="img/news-img-1.webp" media="(min-width: 640px)" type="image/webp">
+                          <source data-srcset="img/news-img-1.jpg" media="(min-width: 640px)">
+                          <!-- 450x300 -->
+                          <source data-srcset="img/news-img-1.webp" type="image/webp">
+                          <img class="b-lazy" data-src="img/news-img-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Фото" width="600" height="400">
+                        </picture>
+                      </div>
+                      <div class="uk-card-body uk-flex uk-flex-column uk-flex-between">
+                        <h4 class="uk-card-title">Кейс Varus</h4>
+                        <div class="uk-card-footer uk-padding-remove">
+                          <span class="publishedon">22 Лют, 2019</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="uk-card uk-card-small uk-card-default uk-flex uk-flex-column">
+                      <div class="embed-responsive embed-responsive--3-2 uk-card-media-top">
+                        <picture>
+                          <source data-srcset="img/news-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                          <source data-srcset="img/news-img-1.jpg" media="(min-width: 992px)">
+                          <!-- 375x250 -->
+                          <source data-srcset="img/news-img-1.webp" media="(min-width: 640px)" type="image/webp">
+                          <source data-srcset="img/news-img-1.jpg" media="(min-width: 640px)">
+                          <!-- 450x300 -->
+                          <source data-srcset="img/news-img-1.webp" type="image/webp">
+                          <img class="b-lazy" data-src="img/news-img-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Фото" width="600" height="400">
+                        </picture>
+                      </div>
+                      <div class="uk-card-body uk-flex uk-flex-column uk-flex-between">
+                        <h4 class="uk-card-title">Кейс Varus: коли і чому рітейлеру</h4>
+                        <div class="uk-card-footer uk-padding-remove">
+                          <span class="publishedon">22 Лют, 2019</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="uk-card uk-card-small uk-card-default uk-flex uk-flex-column">
+                      <div class="embed-responsive embed-responsive--3-2 uk-card-media-top">
+                        <picture>
+                          <source data-srcset="img/news-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                          <source data-srcset="img/news-img-1.jpg" media="(min-width: 992px)">
+                          <!-- 375x250 -->
+                          <source data-srcset="img/news-img-1.webp" media="(min-width: 640px)" type="image/webp">
+                          <source data-srcset="img/news-img-1.jpg" media="(min-width: 640px)">
+                          <!-- 450x300 -->
+                          <source data-srcset="img/news-img-1.webp" type="image/webp">
+                          <img class="b-lazy" data-src="img/news-img-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Фото" width="600" height="400">
+                        </picture>
+                      </div>
+                      <div class="uk-card-body uk-flex uk-flex-column uk-flex-between">
+                        <h4 class="uk-card-title">Коли і чому рітейлеру?</h4>
+                        <div class="uk-card-footer uk-padding-remove">
+                          <span class="publishedon">22 Лют, 2019</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+              </div>
+
+              <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+      <main role="main">
+
+        <section class="uk-background-primary uk-margin-large-bottom uk-light">
+          <div class="uk-container">
+            <div class="uk-child-width-1-1 uk-child-width-1-2@s" data-uk-grid>
+              <div class="uk-margin-medium-top uk-margin-medium-bottom">
+                <h2>Основна мета <br>
+                ГС “Пест Контроль”</h2>
+                <p>Основною метою  Громадської спілки «Пест контроль України»  є  набуття статусу саморегулівної організації задля формування і регулювання  ринку послуг у сфері пест контролю.</p>
+                <a href="main-goal.html" class="uk-button uk-button-default uk-margin-large-top">Читати більше</a>
+              </div>
+              <div class="uk-text-center uk-text-right@m uk-margin-remove-top uk-flex uk-flex-center uk-flex-right@m">
+                <img class="aim-img" src="img/pest-control-bg.svg" alt="pest-control">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="uk-section uk-background-muted uk-margin-large-bottom">
+          <div class="uk-container">
+            <h2>Переваги членства</h2>
+            <ul class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-medium-top" data-uk-grid data-uk-height-match="target: > li > .uk-card">
+              <li>
+                <div class="uk-card uk-card-small uk-card-default">
+                  <div class="uk-card-body" style="border-bottom: 4px solid #27b45d">
+                    <img src="img/rat.svg" alt="Rat icon" width="90" height="64">
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">1. Захист інтересів</h3>
+                    <p>Захист інтересів Вашої організації чи підприємства, користуючись підтримкою Спілки «Пест контроль України» та використовуючи інформаційну підтримку засобів масової інформації</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default">
+                  <div class="uk-card-body" style="border-bottom: 4px solid #27b45d">
+                    <img src="img/rat.svg" alt="Rat icon" width="90" height="64">
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">2. Оримання інформації про:</h3>
+                    <ul class="uk-list uk-list-bullet">
+                      <li class="uk-margin-remove-top">події на ринку пест контролю</li>
+                      <li class="uk-margin-remove-top">динаміку цін та прогнози</li>
+                      <li class="uk-margin-remove-top">конкурентів</li>
+                      <li class="uk-margin-remove-top">аналізу вигід та ризиків</li>
+                      <li class="uk-margin-remove-top">зміни в законодавстві</li>
+                      <li class="uk-margin-remove-top">тощо…</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default">
+                  <div class="uk-card-body" style="border-bottom: 4px solid #27b45d">
+                    <img src="img/rat.svg" alt="Rat icon" width="90" height="64">
+                  </div>
+                  <div class="uk-card-body">
+                    <h3 class="uk-card-title">3. Пільги</h3>
+                    <p>На пільгових умовах брати участь у конференціях, семінарах, тренінгах, навчальних програмах, які проводить Спілка, розміщувати рекламу на ресурсах Спілки, користуватися юридичними послугами компаній-партнерів Спілки</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="uk-section uk-background-primary uk-margin-large-bottom uk-light">
+          <div class="uk-container">
+            <h2>Стрічка останніх новин з розділу:</h2>
+
+            <div>
+
+              <div class="uk-container uk-margin-bottom uk-margin-medium-top" style="background-color: rgba(35,42,48,0.25)">
+                <div class="uk-margin-top uk-margin-bottom uk-child-width-1-1 uk-child-width-1-2@s uk-flex-middle subtitle-on-background" data-uk-grid>
+                  <div>
+                    <h3 class="uk-margin-remove-bottom">Найближчі події</h3>
+                  </div>
+                  <div class="uk-text-right@s">
+                    <a href="events.html" class="text-link">Всі публікації подій</a>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid data-uk-height-match="target: > li > .uk-card">
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ: Як в Good Wine заробляють на фестивалях до 10 млн грн</h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ</h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ: Як в Good Wine заробляють на фестивалях до 10 млн грн </h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+            <div>
+
+              <div class="uk-container uk-margin-bottom uk-margin-medium-top" style="background-color: rgba(35,42,48,0.25)">
+                <div class="uk-margin-top uk-margin-bottom uk-child-width-1-1 uk-child-width-1-2@s uk-flex-middle subtitle-on-background" data-uk-grid>
+                  <div>
+                    <h3 class="uk-margin-remove-bottom">Профільні новини</h3>
+                  </div>
+                  <div class="uk-text-right@s">
+                    <a href="events.html" class="text-link">Всі публікації подій</a>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid data-uk-height-match="target: > li > .uk-card">
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ: Як в Good Wine заробляють на фестивалях до 10 млн грн</h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ</h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ: Як в Good Wine заробляють на фестивалях до 10 млн грн </h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+            <div>
+
+              <div class="uk-container uk-margin-bottom uk-margin-medium-top" style="background-color: rgba(35,42,48,0.25)">
+                <div class="uk-margin-top uk-margin-bottom uk-child-width-1-1 uk-child-width-1-2@s uk-flex-middle subtitle-on-background" data-uk-grid>
+                  <div>
+                    <h3 class="uk-margin-remove-bottom">Новини членів ГС</h3>
+                  </div>
+                  <div class="uk-text-right@s">
+                    <a href="events.html" class="text-link">Всі публікації подій</a>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid data-uk-height-match="target: > li > .uk-card">
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ: Як в Good Wine заробляють на фестивалях до 10 млн грн</h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ</h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-card uk-card-small uk-card-default uk-dark uk-flex">
+                    <div class="uk-card-body uk-flex uk-flex-column uk-flex-between" style="flex: 1 1;">
+                      <h4 class="uk-card-title">Хліба та видовищ: Як в Good Wine заробляють на фестивалях до 10 млн грн </h4>
+                      <span class="publishedon">22 Лют, 2019</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+  <div class="page__footer-wrapper" id="target-bottom">
+    @@include('blocks/page-footer/page-footer.html')
+  </div>
+
+  <div id="modal-search" class="uk-modal-full uk-modal" data-uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport>
+      <button class="uk-modal-close-full uk-close-large" type="button" data-uk-close aria-label="Закрыть окно поиска"></button>
+      <form class="uk-search uk-search-large" action="" method="post">
+        <input class="uk-search-input uk-text-center" type="search" placeholder="Поиск..." autofocus>
+      </form>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

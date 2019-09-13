@@ -1,0 +1,126 @@
+
+// Make viewport great again (responsive)
+// http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+@at-root {
+
+  @-ms-viewport { // stylelint-disable-line  at-rule-no-vendor-prefix
+    width: device-width;
+  }
+}
+
+// html
+.page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-overflow-style: scrollbar;
+  -ms-text-size-adjust: 100%; // stylelint-disable-line  property-no-vendor-prefix
+  min-width: 320px;
+  min-height: 100%;
+
+  &__inner {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__footer-wrapper {
+    flex-shrink: 0;
+  }
+
+  &__top-bg {
+    min-height: 500px;
+    // max-height: 800px;
+    //background-color: $global-secondary-background;
+    //background-image: url(../img/index-bg.jpg);
+    //background-position: center;
+    // background-repeat: no-repeat;
+    //background-size: cover;
+    @media (min-width: $breakpoint-large) {
+
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.list-nostyled {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Кастомизируем выделение текста на сайте */
+*:not(img)::selection {
+  //color: $white;
+  //background-color: $main-color; /* Safari, Chrome, Opera */
+}
+
+*:not(img)::-moz-selection {
+  //color: $white;
+  //background-color: $main-color; /* FireFox */
+}
+
+// background: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color, stroke=rgba(255, 255, 255, 0));
+
+.text-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: inherit;
+}
+
+.publishedon {
+  font-size: $global-small-font-size;
+  color: #bfc0c2;
+}
+
+a {
+
+  &:hover,
+  &:focus {
+
+    h2,
+    h3,
+    h4 {
+      color: $global-primary-background !important;
+    }
+  }
+}
+
+.aim-img {
+  min-width: 245px;
+
+  @media (min-width: $breakpoint-small) {
+    flex: 0 1 275px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    flex-basis: 400px;
+  }
+}
+
+.subtitle-on-background {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
