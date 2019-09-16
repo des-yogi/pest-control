@@ -69,6 +69,9 @@ $base-heading-font-weight: bold;
 $global-border-width: 1px;
 $card-default-footer-border: none;
 
+//Forms
+$inverse-form-background: $global-muted-background;
+
 // Buttons
 $button-default-background: rgba(255, 255, 255, 0);
 $button-default-color: $global-emphasis-color;
