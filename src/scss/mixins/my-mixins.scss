@@ -90,3 +90,18 @@
     left: 0;
   }
 }
+
+@mixin hook-button-primary(){}
+// @mixin hook-button-primary-hover(){}
+// @mixin hook-button-primary-active(){}
+
+@mixin hook-inverse-button-primary() {
+
+}
+
+@mixin hook-countdown() {
+
+  & > div:not(:first-child) {
+    padding-left: 15px !important;
+  }
+}

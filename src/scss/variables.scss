@@ -47,7 +47,7 @@ $global-primary-background: #27B45D;
 $global-secondary-background: $global-emphasis-color;
 $global-muted-background: #f4f4f4;
 $global-success-background: $global-primary-background;
-$global-border: $global-muted-background;
+$global-border: #dedede;
 $base-selection-background: $global-primary-background;
 $global-danger-background: #dc143c;
 $article-meta-color: $global-muted-color;
@@ -87,6 +87,11 @@ $inverse-button-default-hover-color: $global-inverse-color;
 $inverse-button-default-active-background: rgba(255, 255, 255, 0);
 $inverse-button-default-active-color: $global-inverse-color;
 
+$inverse-button-primary-background: $global-primary-background;
+$inverse-button-primary-color: $global-inverse-color;
+$inverse-button-primary-hover-color: $global-inverse-color;
+$inverse-button-primary-active-color: $global-inverse-color;
+
 $button-disabled-background: $global-muted-background;
 $button-disabled-color: $global-muted-color;
 
@@ -110,6 +115,16 @@ $close-hover-color: $global-danger-background;
 $offcanvas-bar-width: 320px;
 $offcanvas-bar-width-m: 350px;
 $offcanvas-overlay-background: rgba(0,0,0,0.15);
+
+//Countdown
+
+$countdown-number-font-size:      2rem; // 32px
+$countdown-number-font-size-s:    3rem; // 64px
+$countdown-number-font-size-m:    2.5rem; // 96px
+
+$countdown-separator-font-size:   1rem; // 16px
+$countdown-separator-font-size-s: 2rem; // 32px
+$countdown-separator-font-size-m: 1.5rem; // 48px
 
 // Сетка
 $breakpoint-small: 640px;
