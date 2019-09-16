@@ -4235,7 +4235,7 @@ ul.uk-nav-sub {
   /* 3 */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 300px; }
+  width: 100%; }
 /* Show */
 .uk-drop.uk-open {
   display: block; }
@@ -4254,6 +4254,8 @@ ul.uk-nav-sub {
  ========================================================================== */
 .uk-drop-stack .uk-drop-grid > * {
   width: 100% !important; }
+.uk-drop {
+  left: 0; }
 /* ========================================================================
    Component: Dropdown
  ========================================================================== */

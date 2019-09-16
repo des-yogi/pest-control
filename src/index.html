@@ -15,11 +15,50 @@
 
       <button class="uk-offcanvas-close uk-close-large" type="button" data-uk-close aria-label="Закрыть меню"></button>
 
-      <h3>Title</h3>
+      <ul class="uk-nav-primary uk-nav-parent-icon uk-margin-xlarge-top" data-uk-nav role="navigation">
+        <li class="uk-active"><a href="#">Головна</a></li>
+        <li class="uk-parent">
+          <a href="#">Про спілку</a>
+          <ul class="uk-nav-sub">
+            <li><a href="#">Устав</a></li>
+            <li><a href="#">Звіт по роках</a></li>
+            <li><a href="#">Членство</a></li>
+          </ul>
+        </li>
+        <li class="uk-parent">
+          <a href="#">Члени ГС</a>
+          <ul class="uk-nav-sub">
+            <li><a href="#">Sub item</a></li>
+            <li><a href="#">Sub item</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Новини</a></li>
+        <li><a href="#">Події</a></li>
+        <li><a href="#">Документи</a></li>
+        <li><a href="#">Вакансії</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
+      <div class="uk-hidden@s uk-margin-medium-top uk-margin-bottom">
+        <form class="uk-search uk-search-default uk-width-expand">
+          <a href="#" class="uk-search-icon-flip" data-uk-search-icon></a>
+          <input class="uk-search-input" type="search" placeholder="Пошук...">
+        </form>
+      </div>
+
+      <div class="uk-hidden@s">
+        <button class="uk-button uk-button-default uk-width-expand" type="button">Мова</button>
+        <div class="uk-background-secondary uk-position-relative" data-uk-drop="mode: click; offset: 10">
+          <ul class="uk-nav uk-margin-small-top uk-margin-small-bottom">
+            <li class="uk-active">
+              <a class="uk-text-primary" href="#" title="Русский язык" style="display:block; padding: 10px 20px;">Рус</a>
+            </li>
+            <li>
+              <a class="" href="#" title="Еще язык" style="display:block; padding: 10px 20px;">Анг</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
     </div>
   </div>
