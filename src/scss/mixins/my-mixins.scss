@@ -108,7 +108,7 @@
 
 @mixin hook-pagination-misc() {
 
-  a {
+  .uk-pagination > li > a {
     display: inline-block;
     vertical-align: baseline;
     padding: 0 7px;

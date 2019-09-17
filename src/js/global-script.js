@@ -7,8 +7,8 @@
 
 }());
 
-/*(function () {
-  const submitBtn = document.querySelector('.contacts-form__submit');
+(function () {
+  const submitBtn = document.querySelector('.membership-form__submit');
   const agreementCheckbox = document.querySelector('#agreement');
   const agreementHandler = function (e) {
     if (!this.checked) {
@@ -21,4 +21,4 @@
   if (agreementCheckbox) {
     agreementCheckbox.addEventListener('change', agreementHandler);
   }
-})();*/
+})();
