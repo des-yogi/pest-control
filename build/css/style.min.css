@@ -3835,7 +3835,7 @@ ul.uk-nav-sub {
 /* Disabled */
 .uk-pagination > .uk-disabled > * {
   color: #bfc0c2; }
-a {
+.uk-pagination > li > a {
   display: inline-block;
   vertical-align: baseline;
   padding: 0 7px; }
@@ -8676,6 +8676,25 @@ a.uk-card {
 .news-nav a.active {
     color: #27B45D;
     pointer-events: none; }
+.text-page-content img {
+  width: 100%; }
+label,
+.uk-form-label {
+  cursor: pointer !important; }
+label:hover span,
+  .uk-form-label:hover span {
+    color: #27B45D; }
+input[type=checkbox]:focus + span {
+  color: #27B45D; }
+.year-report .uk-subnav * {
+  font-size: 22px; }
+.year-report .uk-subnav * > a {
+    color: #232a30; }
+.year-report .uk-subnav * > a:hover, .year-report .uk-subnav * > a:focus {
+      color: #27B45D; }
+.year-report .uk-active > a {
+  pointer-events: none;
+  color: #27B45D; }
 @media (min-width: 640px) {
   .uk-container {
     padding-left: 30px;
@@ -9109,7 +9128,9 @@ a.uk-card {
       position: sticky;
       top: 40px; }
     .top-event-calendar td {
-      padding: 15px 0; } }
+      padding: 15px 0; }
+  .membership-form__wrapper {
+    padding: 30px 30px 30px 0; } }
 @media (min-width: 1280px) {
   .uk-heading-medium {
     font-size: 4rem; }

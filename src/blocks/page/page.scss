@@ -255,3 +255,57 @@ a.uk-card {
     }
   }
 }
+
+.text-page-content {
+
+  img {
+    width: 100%;
+  }
+}
+
+.membership-form {
+
+  &__wrapper {
+
+    @media (min-width: $breakpoint-medium) {
+      padding: 30px 30px 30px 0;
+    }
+  }
+}
+
+label,
+.uk-form-label {
+  cursor: pointer !important;
+
+  &:hover {
+
+    span {
+      color: $global-primary-background;
+    }
+  }
+}
+
+input[type=checkbox]:focus + span {
+  color: $global-primary-background;
+}
+
+.year-report {
+
+  .uk-subnav *  {
+    font-size: 22px;
+
+    & > a {
+      color: $global-emphasis-color;
+
+      &:hover,
+      &:focus {
+        color: $global-primary-background;
+      }
+    }
+  }
+
+  .uk-active > a {
+    pointer-events: none;
+    color: $global-primary-background;
+  }
+}
