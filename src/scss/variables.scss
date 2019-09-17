@@ -63,7 +63,8 @@ $global-medium-margin: 40px;
 $global-large-margin: 80px;
 
 // Text style
-$base-link-text-decoration: underline;
+$base-link-text-decoration: none;
+$base-link-hover-text-decoration: underline;
 $base-heading-font-weight: bold;
 
 $global-border-width: 1px;
@@ -100,6 +101,11 @@ $button-font-size: $global-font-size;
 
 $drop-width: 100%;
 
+//card
+$card-default-box-shadow: none;
+$card-primary-box-shadow: none;
+$card-secondary-box-shadow: none;
+
 // navbar
 $navbar-nav-item-height: 80px;
 
@@ -125,6 +131,17 @@ $countdown-number-font-size-m:    2.5rem; // 96px
 $countdown-separator-font-size:   1rem; // 16px
 $countdown-separator-font-size-s: 2rem; // 32px
 $countdown-separator-font-size-m: 1.5rem; // 48px
+
+// Table
+$table-small-cell-padding-vertical:    10px;
+$table-small-cell-padding-horizontal:  10px;
+$table-cell-padding-vertical:          15px;
+$table-cell-padding-horizontal:        10px;
+$table-large-cell-padding-vertical:    20px;
+$table-large-cell-padding-horizontal:  10px;
+
+//paginatopn
+$pagination-margin-horizontal: 15px;
 
 // Сетка
 $breakpoint-small: 640px;
