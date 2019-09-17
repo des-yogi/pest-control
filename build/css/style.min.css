@@ -67,7 +67,7 @@ a:hover {
 a,
 .uk-link {
   color: #27B45D;
-  text-decoration: underline;
+  text-decoration: none;
   cursor: pointer; }
 a:hover,
 .uk-link:hover,
@@ -768,7 +768,7 @@ dd {
  * 1. Style
  */
 .uk-table th {
-  padding: 16px 12px;
+  padding: 15px 10px;
   text-align: left;
   vertical-align: bottom;
   /* 1 */
@@ -779,7 +779,7 @@ dd {
 /* Cell
  ========================================================================== */
 .uk-table td {
-  padding: 16px 12px;
+  padding: 15px 10px;
   vertical-align: top; }
 /*
  * Remove margin from the last-child
@@ -833,10 +833,10 @@ dd {
  ========================================================================== */
 .uk-table-small th,
 .uk-table-small td {
-  padding: 10px 12px; }
+  padding: 10px 10px; }
 .uk-table-large th,
 .uk-table-large td {
-  padding: 22px 12px; }
+  padding: 20px 10px; }
 /* Justify modifier
  ========================================================================== */
 .uk-table-justify th:first-child,
@@ -860,9 +860,9 @@ dd {
   padding: 0 !important; }
 .uk-table-link > a {
   display: block;
-  padding: 16px 12px; }
+  padding: 15px 10px; }
 .uk-table-small .uk-table-link > a {
-  padding: 10px 12px; }
+  padding: 10px 10px; }
 /* Responsive table
  ========================================================================== */
 /* Phone landscape and smaller */
@@ -2439,8 +2439,8 @@ select.uk-form-width-xsmall {
 .uk-card-default {
   background: #fff;
   color: #4e4e4e;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 .uk-card-default .uk-card-title {
   color: #232a30; }
 .uk-card-default.uk-card-hover:hover {
@@ -2457,8 +2457,8 @@ select.uk-form-width-xsmall {
 .uk-card-primary {
   background: #27B45D;
   color: #fff;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 .uk-card-primary .uk-card-title {
   color: #fff; }
 .uk-card-primary.uk-card-hover:hover {
@@ -2471,8 +2471,8 @@ select.uk-form-width-xsmall {
 .uk-card-secondary {
   background: #232a30;
   color: #fff;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); }
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 .uk-card-secondary .uk-card-title {
   color: #fff; }
 .uk-card-secondary.uk-card-hover:hover {
@@ -3792,7 +3792,7 @@ ul.uk-nav-sub {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   /* 2 */
-  margin-left: -20px;
+  margin-left: -15px;
   /* 3 */
   padding: 0;
   list-style: none; }
@@ -3807,7 +3807,7 @@ ul.uk-nav-sub {
       -ms-flex: none;
           flex: none;
   /* 2 */
-  padding-left: 20px;
+  padding-left: 15px;
   /* 3 */
   position: relative; }
 /* Items
@@ -3835,6 +3835,12 @@ ul.uk-nav-sub {
 /* Disabled */
 .uk-pagination > .uk-disabled > * {
   color: #bfc0c2; }
+a {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 0 7px; }
+.uk-pagination > * {
+  padding-left: 15px; }
 /* ========================================================================
    Component: Tab
  ========================================================================== */
@@ -8578,6 +8584,8 @@ iframe.uk-cover {
         flex-shrink: 0; }
 .page__top-bg {
     min-height: 500px; }
+.page .main-page {
+    padding-top: 20px; }
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -8599,13 +8607,18 @@ iframe.uk-cover {
   color: inherit; }
 .publishedon {
   font-size: 0.875rem;
+  text-decoration: none;
   color: #bfc0c2; }
 a:hover h2,
 a:hover h3,
-a:hover h4, a:focus h2,
+a:hover h4,
+a:hover h5, a:focus h2,
 a:focus h3,
-a:focus h4 {
+a:focus h4,
+a:focus h5 {
   color: #27B45D !important; }
+a.uk-card {
+  text-decoration: none !important; }
 .aim-img {
   min-width: 245px; }
 .subtitle-on-background {
@@ -8622,6 +8635,47 @@ a:focus h4 {
   border-top: 4px solid #27B45D; }
 .uk-light .error, .uk-section-primary:not(.uk-preserve-color) .error, .uk-section-secondary:not(.uk-preserve-color) .error, .uk-tile-primary:not(.uk-preserve-color) .error, .uk-tile-secondary:not(.uk-preserve-color) .error, .uk-card-primary.uk-card-body .error, .uk-card-primary > :not([class*='uk-card-media']) .error, .uk-card-secondary.uk-card-body .error, .uk-card-secondary > :not([class*='uk-card-media']) .error, .uk-overlay-primary .error, .uk-offcanvas-bar .error {
   font-size: 0.85em; }
+.top-event .uk-card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 100%; }
+.top-event .uk-card-body > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1;
+            flex: 1 1; }
+.top-event .uk-card-body h3, .top-event .uk-card-body h4 {
+    margin-top: 0; }
+.top-event .uk-card-body .uk-button {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+.top-event-calendar td {
+  padding: 15px 0; }
+.top-event-calendar a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: currentColor; }
+.top-event-calendar a:hover, .top-event-calendar a:focus, .top-event-calendar a.active {
+    color: #fff;
+    background-color: #27B45D; }
+.top-event-calendar a.active {
+    pointer-events: none; }
+.news-nav a {
+  text-decoration: none; }
+.news-nav a.active {
+    color: #27B45D;
+    pointer-events: none; }
 @media (min-width: 640px) {
   .uk-container {
     padding-left: 30px;
@@ -8642,6 +8696,8 @@ a:focus h4 {
   .uk-tile {
     padding-left: 30px;
     padding-right: 30px; }
+    .uk-pagination > * {
+      padding-left: 20px; }
   .uk-modal {
     padding: 50px 30px; }
   .uk-countdown-number {
@@ -8796,7 +8852,9 @@ a:focus h4 {
           -ms-flex: 0 1 275px;
               flex: 0 1 275px; }
     .subscribe-form__inline {
-      margin-bottom: 0; } }
+      margin-bottom: 0; }
+    .top-event-calendar td {
+      padding: 15px 5px; } }
 @media (min-width: 992px) {
   h1, .uk-h1 {
     font-size: 2.625rem; }
@@ -9049,7 +9107,9 @@ a:focus h4 {
     .contact-form-aside {
       position: -webkit-sticky;
       position: sticky;
-      top: 40px; } }
+      top: 40px; }
+    .top-event-calendar td {
+      padding: 15px 0; } }
 @media (min-width: 1280px) {
   .uk-heading-medium {
     font-size: 4rem; }
@@ -9364,11 +9424,17 @@ a:focus h4 {
       .logo img {
         width: 295px;
         height: 69px; }
+      .page .main-page {
+        padding-top: 40px; }
     .subtitle-on-background {
       padding-left: 40px;
       padding-right: 40px; }
     .contact-form-aside {
-      padding: 40px; } }
+      padding: 40px; }
+    .top-event .uk-card-body {
+      padding-left: 0; }
+    .top-event-calendar td {
+      padding: 15px 5px; } }
 @media (min-width: 1600px) {
   .uk-child-width-1-1\@xl > * {
     width: 100%; }

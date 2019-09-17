@@ -23,7 +23,7 @@
     height: 2px;
     background-color: $main-color;
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $breakpoint-small) {
       transform: translateY(-3px);
     }
   }
@@ -103,5 +103,22 @@
 
   & > div:not(:first-child) {
     padding-left: 15px !important;
+  }
+}
+
+@mixin hook-pagination-misc() {
+
+  a {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 0 7px;
+  }
+
+  .uk-pagination > * {
+    padding-left: $pagination-margin-horizontal;
+
+    @media (min-width: $breakpoint-small) {
+      padding-left: 20px;
+    }
   }
 }

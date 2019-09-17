@@ -42,8 +42,13 @@
     //background-position: center;
     // background-repeat: no-repeat;
     //background-size: cover;
-    @media (min-width: $breakpoint-large) {
+  }
 
+  .main-page {
+    padding-top: 20px;
+
+    @media (min-width: $breakpoint-large) {
+      padding-top: 40px;
     }
   }
 }
@@ -87,6 +92,7 @@
 
 .publishedon {
   font-size: $global-small-font-size;
+  text-decoration: none;
   color: #bfc0c2;
 }
 
@@ -97,10 +103,15 @@ a {
 
     h2,
     h3,
-    h4 {
+    h4,
+    h5 {
       color: $global-primary-background !important;
     }
   }
+}
+
+a.uk-card {
+  text-decoration: none !important;
 }
 
 .aim-img {
@@ -166,5 +177,81 @@ a {
 
   .error {
     font-size: 0.85em;
+  }
+}
+
+.top-event {
+
+  .uk-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+
+    @media (min-width: $breakpoint-large) {
+      padding-left: 0;
+    }
+
+    & > div {
+      flex: 1 1;
+    }
+
+    h3, h4 {
+      margin-top: 0;
+    }
+
+    .uk-button {
+      align-self: flex-end;
+    }
+  }
+}
+
+.top-event-calendar {
+
+  td {
+    padding: 15px 0;
+
+    @media (min-width: $breakpoint-small) {
+      padding: 15px 5px;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+      padding: 15px 0;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      padding: 15px 5px;
+    }
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: currentColor;
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: #fff;
+      background-color: $global-primary-background;
+    }
+
+    &.active {
+      pointer-events: none;
+    }
+  }
+}
+
+.news-nav {
+
+  a {
+    text-decoration: none;
+
+    &.active {
+      color: $global-primary-background;
+      pointer-events: none;
+    }
   }
 }
