@@ -6,7 +6,8 @@
     "sprite-svg": [],
     "object-fit-polyfill": [],
     "embed-responsive": [],
-    "page": []
+    "page": [],
+    "subscribe-form": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
