@@ -50,6 +50,23 @@
     @media (min-width: $breakpoint-large) {
       padding-top: 40px;
     }
+
+    /* &--short {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      // высота вьюпорта минус высота хедера, хлебных крошек и отступов
+      height: calc(100vh - 92px - 44px - 40px - 40px);
+
+      .uk-container {
+        flex: 1 1 100%;
+      }
+
+      .subscribe-form {
+        flex: 0 1 100%;
+      }
+    } */
   }
 }
 
@@ -133,25 +150,6 @@ a.uk-card {
   @media (min-width: $breakpoint-large) {
     padding-left: 40px;
     padding-right: 40px;
-  }
-}
-
-.subscribe-form {
-
-  &__title {
-    margin-bottom: 20px;
-
-    @media (min-width: $breakpoint-medium) {
-      margin-bottom: 0;
-    }
-  }
-
-  &__inline {
-    margin-bottom: 20px;
-
-    @media (min-width: $breakpoint-small) {
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -307,5 +305,52 @@ input[type=checkbox]:focus + span {
   .uk-active > a {
     pointer-events: none;
     color: $global-primary-background;
+  }
+}
+
+.address-block {
+
+  dt,
+  dd {
+    font-size: 20px;
+  }
+
+  dt {
+    font-weight: 700;
+
+    @media (min-width: $breakpoint-large) {
+      flex-basis: 205px;
+    }
+  }
+
+  dd {
+    font-weight: 500;
+    color: $global-primary-background;
+  }
+
+  &__descr-inner {
+
+    @media (min-width: $breakpoint-large) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+}
+
+.map-block {
+  height: 200px;
+
+  @media (min-width: $breakpoint-small) {
+    height: 250px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    height: 350px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }
