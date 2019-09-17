@@ -2,6 +2,7 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  display: inline-block;
   vertical-align: top;
   white-space: nowrap;
   padding-top: 20px;
@@ -18,6 +19,7 @@
   }
 
   img {
+    display: block;
     width: 172px;
     height: 40px;
 

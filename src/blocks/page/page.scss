@@ -148,4 +148,23 @@ a {
   margin-top: 15px;
 }
 
-dt {}
+.contact-form-aside {
+  padding: 40px 20px;
+  border-top: 4px solid $global-primary-background;
+
+  @media (min-width: $breakpoint-medium) {
+    position: sticky;
+    top: 40px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding: 40px;
+  }
+}
+
+.uk-light {
+
+  .error {
+    font-size: 0.85em;
+  }
+}
