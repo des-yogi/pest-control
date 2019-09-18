@@ -354,3 +354,53 @@ input[type=checkbox]:focus + span {
     height: 100%;
   }
 }
+
+.member-cards {
+
+  &__item {
+    //padding: 20px 0;
+    border-top: 4px solid $global-primary-background;
+    border-bottom: 1px solid $global-border;
+
+    .uk-panel {
+      padding: 20px;
+
+      @media (min-width: $breakpoint-large) {
+        padding: 40px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 210px;
+        max-height:135px;
+      }
+
+      &__logo {
+
+        @media (min-width: $breakpoint-medium) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        @media (min-width: $breakpoint-large) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      &__descr {
+
+        @media (min-width: $breakpoint-medium) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        @media (min-width: $breakpoint-large) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
