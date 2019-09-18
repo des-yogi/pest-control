@@ -8584,24 +8584,13 @@ iframe.uk-cover {
         flex-shrink: 0; }
 .page__top-bg {
     min-height: 500px; }
+.page__noindex {
+    padding-bottom: 40px;
+    background-color: #fff; }
 .page .main-page {
-    padding-top: 20px;
-    /* &--short {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-content: space-between;
-      // высота вьюпорта минус высота хедера, хлебных крошек и отступов
-      height: calc(100vh - 92px - 44px - 40px - 40px);
-
-      .uk-container {
-        flex: 1 1 100%;
-      }
-
-      .subscribe-form {
-        flex: 0 1 100%;
-      }
-    } */ }
+    padding-top: 20px; }
+.page .main-page--short {
+      padding: 40px 0 !important; }
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -8905,6 +8894,8 @@ input[type=checkbox]:focus + span {
     margin-right: 0 !important; }
   .uk-hidden\@s {
     display: none !important; }
+        .page .main-page--short {
+          padding: 120px 0 !important; }
     .aim-img {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 275px;
@@ -9159,6 +9150,8 @@ input[type=checkbox]:focus + span {
       .logo img {
         width: 215px;
         height: 50px; }
+        .page .main-page--short {
+          padding: 160px 0 !important; }
     .aim-img {
       -ms-flex-preferred-size: 400px;
           flex-basis: 400px; }
@@ -9496,6 +9489,8 @@ input[type=checkbox]:focus + span {
         height: 69px; }
       .page .main-page {
         padding-top: 40px; }
+        .page .main-page--short {
+          padding: 240px 0 !important; }
     .subtitle-on-background {
       padding-left: 40px;
       padding-right: 40px; }
