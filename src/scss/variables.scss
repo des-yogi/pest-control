@@ -2,7 +2,7 @@
 
 /* ubuntu-regular - cyrillic_latin */
 @font-face {
-  font-display: optional;
+  font-display: swap;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
@@ -14,7 +14,7 @@
 /* ubuntu-500 - cyrillic_latin */
 @font-face {
   font-family: 'Ubuntu';
-  font-display: optional;
+  font-display: swap;
   font-style: normal;
   font-weight: 500;
   src: local('Ubuntu Medium'), local('Ubuntu-Medium'),
@@ -25,7 +25,7 @@
 /* ubuntu-700 - cyrillic_latin */
 @font-face {
   font-family: 'Ubuntu';
-  font-display: optional;
+  font-display: swap;
   font-style: normal;
   font-weight: 700;
   src: local('Ubuntu Bold'), local('Ubuntu-Bold'),
@@ -43,7 +43,7 @@ $global-color: #4e4e4e;
 $global-inverse-color: #fff;
 $global-emphasis-color: #232a30;
 $global-muted-color: #bfc0c2;
-$global-primary-background: #27B45D;
+$global-primary-background: #27b45d;
 $global-secondary-background: $global-emphasis-color;
 $global-muted-background: #f4f4f4;
 $global-success-background: $global-primary-background;
@@ -61,6 +61,7 @@ $lightbox-background: $global-emphasis-color;
 // Margins
 $global-medium-margin: 40px;
 $global-large-margin: 80px;
+$global-xlarge-margin: 160px;
 
 // Text style
 $base-link-text-decoration: none;
