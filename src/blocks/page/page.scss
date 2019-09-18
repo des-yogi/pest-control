@@ -36,12 +36,11 @@
 
   &__top-bg {
     min-height: 500px;
-    // max-height: 800px;
-    //background-color: $global-secondary-background;
-    //background-image: url(../img/index-bg.jpg);
-    //background-position: center;
-    // background-repeat: no-repeat;
-    //background-size: cover;
+  }
+
+  &__noindex {
+    padding-bottom: 40px;
+    background-color: #fff;
   }
 
   .main-page {
@@ -51,22 +50,21 @@
       padding-top: 40px;
     }
 
-    /* &--short {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-content: space-between;
-      // высота вьюпорта минус высота хедера, хлебных крошек и отступов
-      height: calc(100vh - 92px - 44px - 40px - 40px);
+    &--short {
+      padding: 40px 0 !important;
 
-      .uk-container {
-        flex: 1 1 100%;
+      @media (min-width: $breakpoint-small) {
+        padding: 120px 0 !important;
       }
 
-      .subscribe-form {
-        flex: 0 1 100%;
+      @media (min-width: $breakpoint-medium) {
+        padding: 160px 0 !important;
       }
-    } */
+
+      @media (min-width: $breakpoint-large) {
+        padding: 240px 0 !important;
+      }
+    }
   }
 }
 
