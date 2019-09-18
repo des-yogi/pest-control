@@ -86,6 +86,24 @@
   list-style: none;
 }
 
+/* ol{
+  counter-reset: myCounter;
+
+  li:before {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 0.7em;
+    counter-increment: myCounter;
+    content: counter(myCounter)".";
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    text-align: left;
+    line-height: inherit;
+    color: $global-color;
+  }
+}
+ */
 /* Кастомизируем выделение текста на сайте */
 *:not(img)::selection {
   //color: $white;
@@ -400,5 +418,124 @@ input[type=checkbox]:focus + span {
         }
       }
     }
+  }
+}
+
+.about {
+
+
+  &__intro {
+    font-weight: 500;
+  }
+
+  &__history {
+
+    .uk-panel {
+      padding: 20px;
+      border-top: 4px solid $global-primary-background;
+
+      @media (min-width: $breakpoint-medium) {
+        padding: 20px;
+      }
+
+      @media (min-width: $breakpoint-large) {
+        padding: 40px;
+      }
+    }
+  }
+
+  &__diagram {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid $global-muted-background;
+    border-bottom: 2px solid $global-muted-background;
+
+    @media (min-width: $breakpoint-medium) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .uk-panel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @media (min-width: $breakpoint-large) {
+        justify-content: flex-between;
+        align-items: center;
+      }
+
+      & > * {
+        flex-basis: 100%;
+        text-align: center;
+      }
+
+      .pie-chart {
+
+        @media (min-width: $breakpoint-large) {
+          flex-basis: 184px;
+        }
+      }
+
+      h3 {
+
+        br {
+          display: none;
+
+          @media (min-width: $breakpoint-large) {
+            display: block;
+          }
+        }
+
+        @media (min-width: $breakpoint-large) {
+          flex: 0 1 auto;
+          padding-left: 20px;
+          margin-top: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__leader {
+    border-top: 4px solid $global-primary-background;
+
+    .uk-tile {
+      padding: 20px;
+
+      @media (min-width: $breakpoint-medium) {
+        padding: 30px;
+      }
+
+      @media (min-width: $breakpoint-large) {
+        padding: 40px;
+      }
+    }
+
+    .padding-remove-l {
+      @media (min-width: $breakpoint-large) {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__leader-text {
+
+    .uk-panel {
+      padding: 0 20px;
+
+      @media (min-width: $breakpoint-small) {
+        padding: 20px 0;
+      }
+
+      @media (min-width: $breakpoint-medium) {
+        padding: 30px 0 0 0;
+      }
+
+      @media (min-width: $breakpoint-large) {
+        padding: 40px 0 0 0;
+      }
+    }
+
   }
 }
